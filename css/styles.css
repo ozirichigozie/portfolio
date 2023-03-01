@@ -11434,6 +11434,11 @@ section.resume-section .resume-section-content {
   }
 }
 
+.home {
+  background-image: url("../img/profile2.jpg"); 
+  background-size: 100%; 
+  background-repeat: no-repeat;
+}
 #schstat, #portfolio, #alb, #ansible, #docker, #terraform, #calculator, #opecstat {
   width: 100%;
   height: 284px;
