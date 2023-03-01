@@ -11434,7 +11434,7 @@ section.resume-section .resume-section-content {
   }
 }
 
-.home {
+#about {
   background-image: url("../img/profile2.jpg"); 
   background-size: 100%; 
   background-repeat: no-repeat;
@@ -11449,4 +11449,13 @@ section.resume-section .resume-section-content {
 }
 .col-md-4 {
   border-radius: 10px;
+}
+#contactme {
+  background-image: url("../img/contact.jpg"); 
+  background-size: 100%; 
+  background-repeat: no-repeat;
+  color: black;
+}
+input[type="text"], #message, #priority {
+  background: transparent;
 }
