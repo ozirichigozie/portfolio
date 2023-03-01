@@ -11441,7 +11441,7 @@ section.resume-section .resume-section-content {
 }
 #schstat, #portfolio, #alb, #ansible, #docker, #terraform, #calculator, #opecstat {
   width: 100%;
-  height: 284px;
+  height: auto;
   border-radius: 10px;
 }
 .col-md {
