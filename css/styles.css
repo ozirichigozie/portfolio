@@ -11433,3 +11433,15 @@ section.resume-section .resume-section-content {
     padding-bottom: 5rem;
   }
 }
+
+#schstat, #portfolio, #alb, #ansible, #docker, #terraform, #calculator, #opecstat {
+  width: 100%;
+  height: 284px;
+  border-radius: 10px;
+}
+.col-md {
+  border-radius: 10px;
+}
+.col-md-4 {
+  border-radius: 10px;
+}
