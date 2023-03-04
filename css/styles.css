@@ -11439,7 +11439,7 @@ section.resume-section .resume-section-content {
   background-size: 100%; 
   background-repeat: no-repeat;
 }
-#schstat, #portfolio, #alb, #ansible, #docker, #terraform, #calculator, #opecstat {
+#schstat, #portfolio, #alb, #ansible, #docker, #terraform, #calculator, #opecstat, #weather {
   width: 100%;
   height: auto;
   border-radius: 10px;
