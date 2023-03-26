@@ -11461,7 +11461,7 @@ section.resume-section .resume-section-content {
   color: black;
 }
 input[type="text"], #message, #priority {
-  background: transparent;
+  background: rgba(255, 255, 255, 0.5);
 }
 /* slideshow */
 .mySlides1, .mySlides2 {display: none}
