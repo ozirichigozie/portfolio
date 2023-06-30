@@ -635,7 +635,7 @@ progress {
 .container-lg,
 .container-md,
 .container-sm {
-  width: 100%;
+  width: fit-content;
   padding-right: var(--bs-gutter-x, 0.75rem);
   padding-left: var(--bs-gutter-x, 0.75rem);
   margin-right: auto;
@@ -11447,7 +11447,8 @@ section.resume-section .resume-section-content {
   background: rgba(0, 0, 0, 0.7);
 } */
 #aboutme {
-  background-color: rgba(0, 0, 0, 0.5);
+  color: black;
+  background-color: rgba(255, 255, 255, 0.5);
   border-radius: 5px;
 }
 #schstat, #portfolio, #alb, #ansible, #docker, #terraform, #calculator, #opecstat, #weather {
