@@ -11435,12 +11435,19 @@ section.resume-section .resume-section-content {
 }
 
 #about {
-  background-image: url("../img/profile2.jpg"); 
+  background-image: url("../img/profile2.jpg");
   background-size: 100%; 
   background-repeat: no-repeat;
 }
+/* #about:after {
+  content: "";
+  position: fixed;
+  top: 0; bottom: 0; left: 0; right: 0;
+  pointer-events: none;
+  background: rgba(0, 0, 0, 0.7);
+} */
 #aboutme {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   border-radius: 5px;
 }
 #schstat, #portfolio, #alb, #ansible, #docker, #terraform, #calculator, #opecstat, #weather {
@@ -11556,17 +11563,6 @@ img {vertical-align: middle;}
 .active, .dot2:hover {
   background-color: #717171;
 }
-
-/* Fading animation
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-} */
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
