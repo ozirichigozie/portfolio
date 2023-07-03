@@ -33,3 +33,10 @@ Then visit the website at your_domain_name_or_IP_address:80 or localhost:80 if y
 `docker-compose up -d`
 
 Then visit the website at your_domain_name_or_IP_address:8000 or localhost:8000 if you are running it on your local machine.
+_________________________________________________________________________________
+
+> - To stop your container: run `docker ps` to get the <CONTAINER ID>, then run `docker stop <CONTAINER ID>` to stop the container.
+> - To remove the container, run `docker rm <CONTAINER ID>`.
+> - Run `docker images` to view the docker image, and `docker rmi <IMAGE ID>` to remove the image.
+> - If you used docker-compose, run `docker-compose down` in the project's working directory to stop and remove the container. Then `docker rmi <IMAGE ID>` to remove the docker image.
+>
