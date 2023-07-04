@@ -1,0 +1,33 @@
+name: Docker Build, Test And Push To Docker Hub
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    name: Build Portfolio Website
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        
+      - name: Test Docker Image
+        uses: jina-ai/action-hubble-test-docker@v6
+
+      - name: Build Docker Image
+        id: buildAndPushImage
+        uses: MaximilianoBz/dockerhub-buildpush@v1.0
+        with:
+          registry_url: 'docker.io'
+          repository_name: 'ozirichigozie'
+          user_name: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+          image_version: '$(date +%s)'
+          # image_version: 'v1.0'
+          # docker_file: '.'
+      - name: Get pre step result output image_pull_url
+        run: echo "The time was ${{ steps.buildAndPushImage.outputs.image_pull_url }}"
+        
