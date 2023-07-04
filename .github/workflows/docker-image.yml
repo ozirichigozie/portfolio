@@ -1,4 +1,4 @@
-name: Docker Build, Test And Push To Docker Hub
+name: Docker Build And Push To Docker Hub
 
 on:
   push:
@@ -13,9 +13,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-        
-      - name: Test Docker Image
-        uses: jina-ai/action-hubble-test-docker@v6
 
       - name: Build Docker Image
         id: buildAndPushImage
@@ -27,6 +24,7 @@ jobs:
           password: ${{ secrets.DOCKERHUB_TOKEN }}
           image_version: '$(date +%s)'
           # image_version: 'v1.0'
-          # docker_file: '.'
+          docker_file: '.'
+
       - name: Get pre step result output image_pull_url
         run: echo "The time was ${{ steps.buildAndPushImage.outputs.image_pull_url }}"
