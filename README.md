@@ -20,10 +20,10 @@ To follow the deployment procedures explained in this repository you need to hav
 You may use any one of the following methods to deploy this application to your local server or virtual machine. After option 1 or 2, visit the website at your **IP_address:80 or localhost:80** if you are running it on your local machine. For option 3, this will be at **IP_address:8000 or localhost:8000.**
 
 ### 1. Docker Pull 
-Use the Docker Image from `docker.io/ozirichigozie/app_portfolio:latest` by running: 
+With the `docker pull` command, you can use the already built Docker Image of this demo from `docker.io/ozirichigozie/app_portfolio:latest` by running the commands below: 
  
 ```
-docker pull ozirichigozie/app_portfolio
+docker pull ozirichigozie/app_portfolio:latest
 docker run -d -p 80:80 ozirichigozie/app_portfolio
 ```
 The `-p` flag maps port 80 on the host machine to port 80 on the container, while the `-d` flag ensures it runs in detached mode.
@@ -36,12 +36,14 @@ docker build https://github.com/ozirichigozie/portfolio.git#main
 docker image ls
 docker run -d -p 80:80 <image_id>
 ```
- 
+
+The `docker-build` command will find the [Dockerfile](./Dockerfile) present in this repository, and build a Docker Image with it.
+
 ### 3. Docker-Compose
 To follow this option, ensure you have **docker-compose** installed along with Docker.
 - First, clone this repository to your project's working directory (I have named mine "portfolio"). Run, `git clone https://github.com/ozirichigozie/portfolio.git portfolio`.
 - Slide into the project's directory with `cd portfolio`.
-- Within the project's working directory, run `docker-compose up -d`. The `docker-compose.yml` file within the project's directory will be identified and used to build and run a container.
+- Within the project's working directory, run `docker-compose up -d`. The [docker-compose.yml](./docker-compose.yml) file within the project's directory will be identified and used to build and run a container.
 
 ## Cleaning up
 If you intend to practise all three aforementioned options, ensure to delete the container and image from the previous option before going to the next. 
@@ -79,3 +81,5 @@ Don't know how to use GitHub Pages? GitHub Pages aids in hosting the pages from 
 Ensure your homepage is situated in an `index.html` file located within the root folder of the main or master branch of your project's repository, else you may not find your site displayed at your GitHub Pages URL. I hope you find the snapshot below helpful.
 
 ![GitHub Pages](img/github-pages.png)
+
+Read more about `docker` and `docker-compose` at Docker's [official documentation](https://docs.docker.com).
