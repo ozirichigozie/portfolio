@@ -1,14 +1,14 @@
 ![cover_photo](img/architectural_diagram.png)
-# An NGINX, Docker-Containerized Portfolio Web Application
-This is a simple demo of the process of containerization of web applications using Docker. It is aimed at giving DevOps beginners the basic understanding of how to use `docker` and `docker-compose` to build Docker Images and push those images to a container registry - DockerHub.
+# Basic CI/CD Workflow of a Docker-Containerized Portfolio Web Application
+This is a simple demo of the process of containerization of web applications using Docker. It is aimed at giving DevOps beginners a basic understanding of how to use `docker` and `docker-compose` to build Docker Images and push those images to a container registry - DockerHub.
 
-Here, I have used my personal portfolio website which I created with a BOOTSTRAP template to facilitate this demo. This website is served with NGINX, containerized with Docker, and saved in DockerHub. 
+I have used my personal portfolio website, which I created with a BOOTSTRAP template, to facilitate this demo. This website is served with NGINX, containerized with Docker, and saved in DockerHub. 
 
-Also, this repository uses a GitHub Action to automate the Docker Build and Push workflow of this web app.
-
-> You can preview this website [here](https://ozirichigozie.github.io/portfolio/).
-> Leave a review at the contact form (powered by [FormSubmit](https://www.formsubmit.co)) within the website.
+Also, this repository uses a GitHub Action to automate the Docker Build and Push workflow of this web app. The deployment of the website in this repository is automated using the GitHub Pages' Page and Deployment Action. You can preview the website [here](https://ozirichigozie.github.io/portfolio/).
+>
+> I would appreciate it if you submit a review of my work on the contact form (powered by [FormSubmit](https://www.formsubmit.co)) on the website.
 > Find anything you would like to changed or improve on? Please leave a message or create a Pull Request.
+>
 
 ## Prerequisites 
 To follow the deployment procedures explained in this repository you need to have 
@@ -50,4 +50,20 @@ To use docker-compose ensure you have **docker-compose** installed along with Do
 >
 
 ## The GitHub Action Workflow
-The GitHub Action used in this repository ensures that on push of code updates to this repo, the Docker Image is built and pushed to DockerHub. You can find more of this in the [GitHub Actions Marketplace](https://github.com/marketplace). With this, my Docker Image stays up to date anytime I make any changes to my portfolio website. The secret parameters you see in the `.github/workflows/docker-image.yml` file have been provided as configuration secrets specifically for this repository. You can find this by going to **Settings > Secrets and Variables > Actions.** To create your `DOCKERHUB_TOKEN`, login to your [DockerHub account](https://hub.docker.com) and go to **Account Settings > Security > New Access Token.** Give your access token at least **Read** & **Write** permissions, then copy and save it. Note that you will not have access to this token again once you exit the window.
+The GitHub Action used in this repository ensures that on the event of any __Push__ of code updates or merged __Pull Request__ to this repository, the Docker Image is built and pushed to DockerHub (find more of this in the [GitHub Actions Marketplace](https://github.com/marketplace)). With this workflow, my Docker Image stays up to date anytime changes are made to the code of this repository.
+
+### Secrets and Variables
+The secret parameters you see in the [.github/workflows/docker-image.yml](.github/workflows/docker-image.yml) file have been provided by me as configuration secrets specifically for this repository. You can find this by going to your project repository's **Settings > Secrets and Variables > Actions.** To create your `DOCKERHUB_TOKEN`, login to your [DockerHub account](https://hub.docker.com) and go to **Account Settings > Security > New Access Token.** Give your access token at least **Read** & **Write** permissions, then copy and save it. Note that you will not have access to this token again once you exit the window.
+
+After your workflow runs successfully, you can check the logs by clicking on the __Actions__ tab. These logs provide needed reports for debugging in case of errors.
+
+![GitHub Action Workflow Logs](img/workflow-logs.png)
+
+Visit your DockerHub account to verify the creation of your new Docker Image. Also note that whenever you trigger this workflow, a new Docker Image is not created, rather an update is made to the already existing one which was created at the first instance this workflow was executed.
+
+### GitHub Page Build and Deployment
+Don't know how to use GitHub Pages? GitHub Pages aids in hosting the pages from the GitHub repositories of developers or organizations. This facilitates the preview of webpages before they may be deployed to a production environment. Simply go to your project's repository's __Settings > Pages.__ Your website will usually be live at a web address that follows this pattern: `https://your_github_username.github.io/repository_name`. 
+
+Ensure your homepage is situated in an `index.html` file located within the root folder of the main or master branch of your project's repository, else you may not find your site displayed at your GitHub Pages web address. I hope you find the snapshot below helpful.
+
+![GitHub Pages](img/github-pages.png)
