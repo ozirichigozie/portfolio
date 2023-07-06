@@ -2,8 +2,14 @@ version: '3.7'
 
 services:
   web:
+    
+    # Set NGINX:alpine as base image and web server
     image: nginx:alpine
+
+    # Map host's port 8000 to container's port 80
     ports:
       - "8000:80"
+    
+    # Sync current working dir with container's nginx dir
     volumes:
       - .:/usr/share/nginx/html
