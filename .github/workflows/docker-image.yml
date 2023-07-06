@@ -30,4 +30,4 @@ jobs:
       uses: docker/build-push-action@v4
       with:
         push: true
-        tags: ozirichigozie/app_portfolio:latest
+        tags: ${{ secrets.DOCKERHUB_USERNAME }}/${{ vars.REPOSITORY_NAME }}:latest
