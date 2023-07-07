@@ -636,10 +636,10 @@ progress {
 .container-md,
 .container-sm {
   width: fit-content;
+  min-width: 100%;
   padding-right: var(--bs-gutter-x, 0.75rem);
   padding-left: var(--bs-gutter-x, 0.75rem);
-  margin-right: auto;
-  margin-left: auto;
+  margin: 0;
 }
 
 @media (min-width: 576px) {
@@ -11414,7 +11414,7 @@ section.resume-section {
   padding-right: 1rem;
   padding-top: 5rem;
   padding-bottom: 5rem;
-  max-width: 75rem;
+  max-width: 100%;
 }
 section.resume-section .resume-section-content {
   width: 100%;
@@ -11439,17 +11439,12 @@ section.resume-section .resume-section-content {
   background-size: 100%; 
   background-repeat: no-repeat;
 }
-/* #about:after {
-  content: "";
-  position: fixed;
-  top: 0; bottom: 0; left: 0; right: 0;
-  pointer-events: none;
-  background: rgba(0, 0, 0, 0.7);
-} */
+
 #aboutme {
-  color: black;
-  background-color: rgba(255, 255, 255, 0.5);
+  color: whitesmoke;
+  background-color: rgba(0, 0, 0, 0.5);
   border-radius: 5px;
+  padding: 10px;
 }
 #schstat, #portfolio, #alb, #ansible, #docker, #terraform, #calculator, #opecstat, #weather {
   width: 100%;
