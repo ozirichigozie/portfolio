@@ -1,4 +1,4 @@
-# Basic CI/CD Workflow of a Docker-Containerized Portfolio Web Application
+# <h1 align="center" style="color:steelblue; font-size:2.5rem; border:2px solid cyan; border-radius:5px; padding:10px; background-color:black">Basic CI/CD Workflow of a Docker-Containerized Portfolio Web Application</h1>
 
 ![cover_photo](img/architectural_diagram.png)
 
@@ -28,9 +28,9 @@ Also, this repository uses a GitHub Action to automates a CI/CD workflow that wi
 
 ## Prerequisites 
 To follow the deployment procedures explained in this repository you need to have 
-- Docker and docker-compose installed on your workstation.
+- Docker and docker-compose installed on your workstation. You can get bash scripts for installing both [here](https://github.com/ozirichigozie/tools/blob/main/install-docker-on-ubuntu.sh).
 - Basic knowledge on the Linux OS and the use of Docker commands.
-- An account on DockerHub will also come in handy if you intend to activate the GitHub Action Workflow in this repository.
+- An account on [DockerHub](https://hub.docker.com) will also come in handy if you intend to activate the GitHub Action Workflow in this repository.
 
 ## 🚀Deployment Options 
 The three deployment options here include:
@@ -69,7 +69,7 @@ To follow this option, ensure you have **docker-compose** installed along with D
 ## 🧹Cleaning up
 If you intend to practise all three aforementioned options, ensure to delete the container and image from the previous option before going to the next. 
 >
-> ⚠ Note: stop and remove containers first before removing the image they depend on.
+> <p style="color:red">⚠ Note: stop and remove containers first before removing the image they depend on.</p>
 >
 - ### ⏹Stop Containers 
 To stop a container, run `docker ps` to get the `<CONTAINER ID>`, then run `docker stop <CONTAINER ID>` to stop it.
