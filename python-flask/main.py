@@ -1,5 +1,5 @@
 from flask import Flask, request, render_template
-import openpyxl, time
+import openpyxl
 from markupsafe import escape
 
 app = Flask(__name__)
@@ -12,7 +12,7 @@ ws['B1'] = 'Message'
 ws['C1'] = 'Email'
 ws['D1'] = 'Priority'
 
-here = "http://127.0.0.1:5000/"
+home_url = "http://127.0.0.1:5000/"
 
 
 @app.route('/', methods=["GET", "POST"])
@@ -25,8 +25,7 @@ def get_userdata():
         ws.append([Fullname, Message, Email, Priority])
         wb.save('userdata.xlsx')
         return_outputs = {
-            "thank_u_msg": f"<h1>Thank you, {Fullname}!</h1><br><i>Click <a href='{here}'>here</a> to return to homepage.</p>",
-            "sleep": time.sleep(3),
+            "thank_u_msg": f"<h1>Thank you, {Fullname}!</h1><br><i>Click <a href='{home_url}'>here</a> to return to homepage.</p>",
             "render_template": render_template("index.html")
         }
         return return_outputs["thank_u_msg"]
