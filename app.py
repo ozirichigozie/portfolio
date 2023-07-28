@@ -35,7 +35,7 @@ def get_userdata():
 
 @app.route('/<name>', methods=["GET", "POST"])
 def homepage(name):
-    print(f"You are welcome, {name}!")
+    print(f"You are welcome, {escape(name)}!")
     if request.method == "POST":
         return get_userdata()
     return render_template("index.html")
