@@ -58,5 +58,4 @@ jobs:
       env:
         FLASK_APP: app.py
       run: |
-        flask build
         flask run
