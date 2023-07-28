@@ -1,3 +1,10 @@
-README.md
 docker-compose.yml
-.git
+*.git*
+__pycache__
+kubernetes-minikube-manifest
+python-flask
+static
+templates
+*.py
+requirements.txt
+*.xlsx
