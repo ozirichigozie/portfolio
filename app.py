@@ -1,6 +1,6 @@
 from flask import Flask, request, render_template
 import openpyxl
-from markupsafe import escape
+# from markupsafe import escape
 
 app = Flask(__name__)
 
@@ -35,7 +35,7 @@ def get_userdata():
 
 @app.route('/<name>', methods=["GET", "POST"])
 def homepage(name):
-    print(f"You are welcome, {escape(name)}!")
+    print(f"You are welcome, {name}!")
     if request.method == "POST":
         return get_userdata()
     return render_template("index.html")
