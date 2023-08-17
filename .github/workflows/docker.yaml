@@ -31,4 +31,4 @@ jobs:
       with:
         push: true
         # tags: ${{ secrets.DOCKERHUB_USERNAME }}/${{ vars.REPOSITORY_NAME }}:latest
-        tags: ${{ secrets.DOCKERHUB_USERNAME }}/${{ vars.REPOSITORY_NAME }}:$(date +'%Y-%m-%d')
+        tags: ${{ secrets.DOCKERHUB_USERNAME }}/${{ vars.REPOSITORY_NAME }}:$(date +'%Y-%m-%d_%H-%M-%S')
