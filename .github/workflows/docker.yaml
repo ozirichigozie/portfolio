@@ -30,4 +30,5 @@ jobs:
       uses: docker/build-push-action@v4
       with:
         push: true
-        tags: ${{ secrets.DOCKERHUB_USERNAME }}/${{ vars.REPOSITORY_NAME }}:latest
+        # tags: ${{ secrets.DOCKERHUB_USERNAME }}/${{ vars.REPOSITORY_NAME }}:latest
+        tags: ${{ secrets.DOCKERHUB_USERNAME }}/${{ vars.REPOSITORY_NAME }}:$(date +'%Y-%m-%d')
