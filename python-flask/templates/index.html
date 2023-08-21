@@ -20,10 +20,14 @@
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
             <a class="navbar-brand js-scroll-trigger" href="#page-top">
-                <span class="d-block d-lg-none">CHIGOZIE COSMAS OZIRI</span>
-                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" title="Chigozie C. Oziri" alt="photo of Chigozie Oziri" /></span>
+                <span class="d-block d-lg-none">CHIGOZIE C. OZIRI</span>
+                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" title="Chigozie C. Oziri" alt="photo of Chigozie Oziri"/></span>
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+                 data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" 
+                 aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">Home</a></li>
@@ -46,7 +50,7 @@
             <section class="resume-section" id="about">
                 <div class="resume-section-content">
                     <h1 class="text-primary">
-                        Chigozie Cosmas OZIRI
+                        Chigozie C. OZIRI
                     </h1>
                     <div class="subheading mb-5">
                         <p><b>Cloud Engineer | DevOps | Systems Administrator</b> | Frontend | Data Analyst</p>
@@ -54,12 +58,27 @@
                         <a href="mailto:ozirichigozie@gmail.com">ozirichigozie@gmail.com</a>
                         </p>
                     </div>
-                    <p class="lead mb-5" id="aboutme">
-                        <b>A keenly focused and goal-oriented individual with measurable contributions to leadership and strategic planning, with work experience in 
-                            environments where I.T tools are extensively employed in proffering solutions to organisational problems, meeting set goals, building products, offering services,
-                            creating innovations and inventions, etc.
-                        </b>
-                    </p>
+                    <!-- Random Quotes -->
+                    <div class="text-center card mb-5" style="background-color: rgba(0, 0, 0, 0.5); margin-bottom:5px">
+                        <div class="lead font-weight-normal card-body">
+                            <h5 class="card-title">
+                                Simple Quotes Generator
+                            </h5><br>
+                            <!-- Quotes will be displayed here -->
+                            <p class="card-text" id="quoteDisplay">
+                                <strong>
+                                    "Gratitude makes sense of our past, 
+                                    brings peace for today, and creates a 
+                                    vision for tomorrow." - Melody Beattie
+                                </strong>
+                            </p>                     
+                        </div>
+                        <button type="button" 
+                            class="btn btn-primary text-white m-3" 
+                            onclick="newQuote()">
+                            New Quote
+                        </button>
+                    </div><br>
                     <div class="social-icons">
                         <a class="social-icon" target="_blank" title="linkedin.com/in/chigozie-oziri-45a910118/" href="https://www.linkedin.com/in/chigozie-oziri-45a910118/"><i class="fab fa-linkedin-in"></i></a>
                         <a class="social-icon" target="_blank" title="github.com/ozirichigozie" href="https://github.com/ozirichigozie"><i class="fab fa-github"></i></a>
@@ -77,30 +96,37 @@
                     <h2 class="mb-5">Experience</h2>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">INTERN (ONGOING ONE-YEAR INTENSIVE CLOUD ENGINEERING PROGRAM)</h3>
+                            <h3 class="mb-0">CLOUD ENGINEER INTERN</h3>
                             <div class="subheading mb-3">ALTSCHOOL AFRICA – SCHOOL OF ENGINEERING</div>
                             <p> Executed the following projects:</p>
                             <div class="slideshow-container">
+                                
                                 <div class="mySlides">
-                                    <a href="http://ozirichigozie.github.io/portfolio/" target="_blank" rel="noopener noreferrer">
+                                    <div>
                                         <div class="numbertext">1 / 9</div>
                                         <img id="portfolio" src="./img/architectural_diagram.png" alt="portfolio-website-snapshot">
                                         <div class="text">Created this portfolio website from a BOOTSTRAP template, and Containerized
-                                             it into a Docker Image using a CI/CD GitHub Action Workflow...
+                                            it into a Docker Image using a CI/CD GitHub Action Workflow...<br>
+                                            <a href="http://ozirichigozie.github.io/portfolio/" target="_blank" rel="noopener noreferrer"><button class="btn btn-outline btn-success">Webpage</button></a>
+                                            <a href="http://github.com/ozirichigozie/portfolio.git" target="_blank" rel="noopener noreferrer"><button class="btn btn-outline btn-info">View Code</button></a>
                                         </div>
-                                    </a>
+                                    </div>
                                 </div>
                                 
                                 <div class="mySlides">
-                                    <a href="https://schoolstat.circle277.repl.co" target="_blank" rel="noopener noreferrer">
+                                    <div>
                                         <div class="numbertext">2 / 9</div>
                                         <img id="schstat" src="./img/schoolstat.png" alt="schoolstat-project-snapshot">
-                                        <div class="text">A school dashboard website in collaboration with a team of four, using JavaScript, CSS, and HTML5</div>
-                                    </a>
+                                        <div class="text">
+                                            A school dashboard website in collaboration with a team of four, using JavaScript, CSS, and HTML5<br>
+                                            <a href="https://schoolstat.circle277.repl.co" target="_blank" rel="noopener noreferrer"><button class="btn btn-outline btn-success">Webpage</button></a>
+                                            <a href="https://github.com/ozirichigozie/schoolStat.git" target="_blank" rel="noopener noreferrer"><button class="btn btn-outline btn-info">View Code</button></a>
+                                        </div>
+                                    </div>
                                 </div>
 
                                 <div class="mySlides">
-                                    <a href="https://github.com/ozirichigozie/altschool-cloud-holiday-challenge/" target="_blank" rel="noopener noreferrer">
+                                    <div>
                                         <div class="numbertext">3 / 9</div>
                                         <img id="alb" src="./img/nginx_alb.png" alt="project-snapshot">
                                         <div class="text">A sample NGINX webpage on AWS with  
@@ -108,59 +134,78 @@
                                             instances behind an 
                                             <abbr title="Application Load Balancer">A.L.B</abbr> 
                                             such that instances are only accessible via the 
-                                            <abbr title="Application Load Balancer">A.L.B</abbr>
+                                            <abbr title="Application Load Balancer">A.L.B</abbr><br>
+                                            <a href="https://github.com/ozirichigozie/altschool-cloud-holiday-challenge/" target="_blank" rel="noopener noreferrer"><button class="btn btn-outline btn-info">View Code</button></a>
                                         </div> 
-                                    </a>
+                                    </div>
                                 </div>
 
                                 <div class="mySlides">
-                                    <a href="http://github.com/ozirichigozie/altschool-exam-project/" target="_blank" rel="noopener noreferrer">
+                                    <div>
                                         <div class="numbertext">4 / 9</div>
                                         <img id="ansible" src="./img/ansible-laravel-repo.png" alt="project-snapshot">
-                                        <div class="text">A sample Laravel App deployed on AWS using Ansible</div>
-                                    </a>
+                                        <div class="text">
+                                            A sample Laravel App deployed on AWS using Ansible<br>
+                                            <a href="https://github.com/ozirichigozie/altschool-exam-project/" target="_blank" rel="noopener noreferrer"><button class="btn btn-outline btn-info">View Code</button></a>
+                                        </div>
+                                    </div>
                                 </div>
 
                                 <div class="mySlides">
-                                    <a href="http://github.com/ozirichigozie/altschool-docker-laravel" target="_blank" rel="noopener noreferrer">
+                                    <div>
                                         <div class="numbertext">5 / 9</div>
                                         <img id="docker" src="./img/docker-laravel-homepage.png" alt="docker-project-snapshot">
-                                        <div class="text">Sample Laravel App deployed with Docker on AWS</div>
-                                    </a>
+                                        <div class="text">
+                                            Sample Laravel App deployed with Docker on AWS<br>
+                                            <a href="http://github.com/ozirichigozie/altschool-docker-laravel" target="_blank" rel="noopener noreferrer"><button class="btn btn-outline btn-info">View Code</button></a>
+                                        </div>
+                                    </div>
                                 </div>
 
                                 <div class="mySlides">
-                                    <a href="https://github.com/ozirichigozie/terraform-bash/" target="_blank" rel="noopener noreferrer">
+                                    <div>
                                         <div class="numbertext">6 / 9</div>
                                         <img id="terraform" src="./img/terraform-bash.png" alt="project-snapshot">
-                                        <div class="text">Implementing terraform with bash scripting; provisioning multiple ec2-instances behind an <abbr title="Application Load Balancer">ALB</abbr></div>
-                                    </a>
+                                        <div class="text">
+                                            This project demonstrates the integration of Terraform and Bash Scripting in provisioning and configuring cloud infrastructure on AWS<br>
+                                            <a href="https://github.com/ozirichigozie/terraform-bash/" target="_blank" rel="noopener noreferrer"><button class="btn btn-outline btn-info">View Code</button></a>
+                                        </div>
+                                    </div>
                                 </div>
 
                                 <div class="mySlides">
-                                    <a href="https://github.com/ozirichigozie/terraformsible.git" target="_blank" rel="noopener noreferrer">
+                                    <div href="https://github.com/ozirichigozie/terraformsible.git" target="_blank" rel="noopener noreferrer">
                                         <div class="numbertext">7 / 9</div>
                                         <img id="terraform" src="./img/terraformsible.png" alt="project-snapshot">
-                                        <div class="text">INTEGRATED TERRAFORM AND ANSIBLE IN PROVISIONING AND CONFIGURING 3-EC2 INSTANCES BEHIND AN ELASTIC APPLICATION LOAD BALANCER ON AWS</div>
-                                    </a>
+                                        <div class="text">
+                                            This project demonstrates the integration of Terraform and Ansible in provisioning and configuring cloud infrastructure on AWS<br>
+                                            <a href="https://github.com/ozirichigozie/terraformsible.git" target="_blank" rel="noopener noreferrer"><button class="btn btn-outline btn-info">View Code</button></a>
+                                        </div>
+                                    </div>
                                 </div>
                                 
                                 <div class="mySlides">
-                                    <a href="https://github.com/ozirichigozie/project3/" target="_blank" rel="noopener noreferrer">
+                                    <div>
                                         <div class="numbertext">8 / 9</div>
                                         <img id="terraform" src="./img/microservice.png" alt="project-snapshot">
-                                        <div class="text">Deployed a microservices-based architecture on Kubernetes, using a clear IaC 
+                                        <div class="text">
+                                            Deployed a microservices-based architecture on Kubernetes, using a clear IaC 
                                             (Infrastructure as Code) deployment toolset which includes Terraform and Jenkins to 
-                                            create an effective CI/CD pipeline</div>
-                                    </a>
+                                            create an effective CI/CD pipeline<br>
+                                            <a href="https://github.com/ozirichigozie/project3/" target="_blank" rel="noopener noreferrer"><button class="btn btn-outline btn-info">View Code</button></a>
+                                        </div>
+                                    </div>
                                 </div>
 
                                 <div class="mySlides">
-                                    <a href="https://github.com/ozirichigozie/altschool-cloud-holiday-challenge/" target="_blank" rel="noopener noreferrer">
+                                    <div>
                                         <div class="numbertext">9 / 9</div>
                                         <img id="terraform" src="./img/upnext.jpg" alt="project-snapshot">
-                                        <div class="text">Next Project: still loading...</div>
-                                    </a>
+                                        <div class="text">
+                                            Next Project<br>
+                                            <a href="#" target="_blank" rel="noopener noreferrer"><button class="btn btn-outline btn-info">still loading...</button></a>
+                                        </div>
+                                    </div>
                                 </div>
                                 <!--  -->
                               
@@ -181,7 +226,7 @@
                             </div>
                         </div>
 
-                        <div class="flex-shrink-0"><span class="text-primary">April 2022 – Present</span></div>
+                        <div class="flex-shrink-0"><span class="text-primary">April 2022 – June 2023</span></div>
                     </div>
                     <hr>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
@@ -242,40 +287,30 @@
             <section class="resume-section" id="education">
                 <div class="resume-section-content">
                     <h2 class="mb-5">Education</h2>
-                    <p>As a graduate of Federal Polytechnic Nekede, I earned a Higher National Diploma in Science
-                        Technology. However, I have been pursuing a career path in software engineering for about a year now. My Education/Certifications are as follows:</p>
-                        <div class="d-flex flex-column flex-md-row justify-content-between mt-4 mb-5">
-                            <div class="flex-grow-1">
-                                <h3 class="mb-0">ALTSCHOOL AFRICA – SCHOOL OF ENGINEERING</h3>
-                                <div class="subheading mb-3">ONE YEAR INTENSIVE ONLINE TRAINING PROGRAM (ONGOING)</div>
-                                <div>Cloud Engineering</div>
-                                <p></p>
-                            </div>
-                            <div class="flex-shrink-0"><span class="text-primary">April 2022 – Present</span></div>
-                        </div>
-
-                        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <p>The following are my academic qualifications:</p>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mt-4 mb-5">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">Federal Polytechnic Nekede</h3>
-                            <div class="subheading mb-3">Higher National Diploma, HND</div>
-                            <div>Science Laboratory Technology</div>
+                            <h3 class="mb-0">AltSchool Africa, School of Engineering</h3>
+                            <div class="subheading mb-3">Diploma</div>
+                            <div>Cloud Engineering</div>
+                            <p></p>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">August 2013 - May 2015</span></div>
+                        <div class="flex-shrink-0"><span class="text-primary">April 2022 – June 2023</span></div>
                     </div>
 
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
                             <h3 class="mb-0">Federal Polytechnic Nekede</h3>
-                            <div class="subheading mb-3">National Diploma, ND</div>
+                            <div class="subheading mb-3">National Diploma & Higher National Diploma (or Advanced Diploma)</div>
                             <div>Science Laboratory Technology</div>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">August 2016 - September 2018</span></div>
+                        <div class="flex-shrink-0"><span class="text-primary">October 2013 - September 2018</span></div>
                     </div>
 
                     <div class="d-flex flex-column flex-md-row justify-content-between">
                         <div class="flex-grow-1">
                             <h3 class="mb-0">High Achievers Academy</h3>
-                            <div class="subheading mb-3">Secondary Education</div>
+                            <div class="subheading mb-3">Secondary (or High School) Education</div>
                         </div>
                         <div class="flex-shrink-0"><span class="text-primary">August 2004 - May 2010</span></div>
                     </div>
@@ -288,7 +323,8 @@
             <section class="resume-section" id="skills">
                 <div class="resume-section-content">
                     <h2 class="mb-5">Skills</h2>
-                    <div class="subheading mb-3">Programming Languages & Tools</div>
+                    <div class="subheading mb-3">Web/Programming Languages and Tools</div>
+		    <p class="mb-0">I am proficient in the following devOps tools, web and programming languages.</p>
                     <ul class="list-inline dev-icons">
                         <li class="list-inline-item"><i class="fab fa-html5" title="HyperText Markup Language"></i></li>
                         <iconify-icon title="BASH Scripting" icon="logos:bash"></iconify-icon>
@@ -310,6 +346,7 @@
                         <iconify-icon title="Provisioning Tool: Terraform" icon="mdi:terraform"></iconify-icon>
                         <iconify-icon title="Provisioning Tool: Kubernetes" icon="mdi:kubernetes"></iconify-icon>
                         <iconify-icon title="Continous Integration Tool: Jenkins" icon="vscode-icons:file-type-jenkins"></iconify-icon>
+			<iconify-icon title="CI/CD Tool: GitHub Actions" icon="devicon:githubactions"></iconify-icon>
                     </ul>
                     <ul class="fa-ul mb-0">
                         <li>
@@ -433,38 +470,53 @@
                         <div class="flex-grow-1">
                             <h3 class="mb-0">Projects Attempted During My Tech Journey</h3>
                             <!-- <div class="subheading mb-3"></div> -->
-                            <p> Executed the following projects:</p>
+                            <p>Executed the following projects:</p>
                             
                             <div class="slideshow-container">
                                 <div class="mySlides2">
-                                    <a href="https://ozirichigozie.github.io/assignment2/" target="_blank" rel="noopener noreferrer">
+                                    <div>
                                         <div class="numbertext">1 / 4</div>
                                         <img id="opecstat" src="./img/opecstat.png" alt="project-snapshot">
-                                        <div class="text">A BOOTSTRAP Project Assignment on OPECSTAT</div>
-                                    </a>
+                                        <div class="text">
+                                            A BOOTSTRAP Project Assignment on OPECSTAT<br>
+                                            <a href="https://ozirichigozie.github.io/assignment2/" target="_blank" rel="noopener noreferrer"><button class="btn btn-outline btn-success">Webpage</button></a>
+                                            <a href="https://github.com/ozirichigozie/assignment2" target="_blank" rel="noopener noreferrer"><button class="btn btn-outline btn-info">View Code</button></a>
+                                        </div>
+                                    </div>
                                 </div>
                               
                                 <div class="mySlides2">
-                                    <a href="https://ozirichigozie.github.io/calculator_app/" target="_blank" rel="noopener noreferrer">
+                                    <div>
                                         <div class="numbertext">2 / 4</div>
                                         <img id="calculator" src="./img/calculator_app.png" alt="project-snapshot">
-                                        <div class="text">A Calculator App with JavaScript, CSS, and HTML5</div>
-                                    </a>
+                                        <div class="text">
+                                            A Calculator App with JavaScript, CSS, and HTML5<br>
+                                            <a href="https://ozirichigozie.github.io/calculator_app/" target="_blank" rel="noopener noreferrer"><button class="btn btn-outline btn-success">Webpage</button></a>
+                                            <a href="https://github.com/ozirichigozie/calculator_app.git" target="_blank" rel="noopener noreferrer"><button class="btn btn-outline btn-info">View Code</button></a>
+                                        </div>
+                                    </div>
                                 </div>
                               
                                 <div class="mySlides2">
-                                    <a href="https://ozirichigozie.github.io/weather_app/index.html" target="_blank" rel="noopener noreferrer">
+                                    <div>
                                         <div class="numbertext">3 / 4</div>
                                         <img id="weather" src="./img/weather_app.png" alt="project-snapshot">
-                                        <div class="text">An app for checking the weather condition of different cities around the globe</div>
-                                    </a>
+                                        <div class="text">
+                                            An app for checking the weather condition of different cities around the globe<br>
+                                            <a href="https://ozirichigozie.github.io/weather_app/index.html" target="_blank" rel="noopener noreferrer"><button class="btn btn-outline btn-success">Webpage</button></a>
+                                            <a href="https://github.com/ozirichigozie/weather_app.git" target="_blank" rel="noopener noreferrer"><button class="btn btn-outline btn-info">View Code</button></a>
+                                        </div>
+                                    </div>
                                 </div>
+
                                 <div class="mySlides2">
-                                    <a href="" target="_blank" rel="noopener noreferrer">
+                                    <div>
                                         <div class="numbertext">4 / 4</div>
                                         <img id="alb" src="./img/upnext.jpg" alt="project-snapshot">
-                                        <div class="text">?</div>
-                                    </a>
+                                        <div class="text">Next up<br>
+                                            <a href="#" target="_blank" rel="noopener noreferrer"><button class="btn btn-outline btn-info">still loading...</button></a>
+                                        </div>
+                                    </div>
                                 </div>
                               
                                 <a class="prev" onclick="plusSlides2(-1)">&#10094;</a>
@@ -496,11 +548,15 @@
                 </div>
             </section>
             <hr class="m-0" />
+
+            <!-- Contact me -->
             <section class="resume-section" id="contactme">
                 <div class="resume-section-content">
                     <h2 class="mb-5">CONTACT ME</h2>
-		    <form action="{{ url_for('get_userdata') }}" method="POST">
-                        <div class="form-group m-2">
+                    <form class="text-white" style="font-weight: bold;" 
+                        action="https://formsubmit.co/6473b0814b5e2d611c5f84ab539cb5b8" 
+                        method="POST">
+                        <div class="form-group m-2 text-center">
                             <label for="name">Full name:</label>
                             <input type="text"
                                 name="fullname"
@@ -510,19 +566,19 @@
                                 required
                             />
                         </div>
-                        <div class="form-group m-2">
+                        <div class="form-group m-2 text-center">
                             <label for="message">Message:</label>
                             <textarea class="form-control" 
                                 rows="5"
                                 id="message"     
                                 name="message" 
                                 value="" 
-                                minlength="10" 
-                                maxlength="15000"
+                                minlength="30" 
+                                maxlength="150000"
                                 required>
                             </textarea>
                         </div>
-                        <div class="form-group m-2">
+                        <div class="form-group m-2 text-center">
                             <label for="email">Email:</label>
                             <input type="text"
                                 name="email" 
@@ -532,16 +588,8 @@
                                 required
                             />
                         </div>
-                        <div class='form-group m-2'>
-                            <label for="priority">Priority: </label>
-                                <select name="priority" class="p-2" id="priority">
-                                    <option value="Urgent">Urgent</option>
-                                    <option value="Not Urgent">Not Urgent</option>
-                                    <option value="Others">Others</option>
-                                </select>
-                        </div>
-                        <div class='form-group mt-3 m-2'>
-                            <button class="btn btn-primary p-3">SUBMIT</button>
+                        <div class='form-group mt-3 m-2 text-center'>
+                            <button class="btn btn-md btn-primary p-3">SUBMIT</button>
                         </div>
                     </form>
                 </div>
@@ -553,6 +601,21 @@
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
         <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+            <!-- Optional JavaScript; choose one of the two! -->
+        <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
     </body>
+    <style>
+        body {
+          /* background-color: #212121; */
+          background-color: rgb(0, 0, 21);
+          color: antiquewhite
+        }
+    </style>
 </html>
 
