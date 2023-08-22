@@ -117,7 +117,7 @@ var quotes = [
   "“Courage is more exhilarating than fear and in the long run it is easier. We do not have to become heroes overnight. Just one step at a time, meeting each thing that comes up, seeing it is not as dreadful as it appeared, discovering we have the strength to stare it down.” ― Eleanor Roosevelt",
   "“My best friend is the one who brings out the best in me.” — Henry Ford",
   "“It is not happiness that brings us gratitude. It is gratitude that brings us happiness.”",
-  "“A man that stays true to himself will be a lighthouse when his friends are lost at sea.”",
+  "“A man who holds steadfast to the truth will be a lighthouse to his friends when they are lost at sea.”",
   "“When tempted to fight fire with fire, remember that the Fire Department usually uses water.” — Unknown",
   "“Always remember that you are unique — just like everybody else.” — Unknown",
   "“Do not worry about the world coming to an end today. It is already tomorrow in Australia.” — Charles Schulz",
